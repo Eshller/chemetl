@@ -1,0 +1,39 @@
+{% extends "Work/Elements/base.html" %}
+{% block about %}
+{% load static %}
+<!-- About Start -->
+<link rel="stylesheet" href={% static "Work/css/about.css" %}>
+<div class="about wow fadeInUp" data-wow-delay="0.1s" id = "about">
+    <div class="container bgw">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="about-img">
+                    <img src={% static "media/p1.jpeg" %} alt="Image">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+                <div class="section-header text-left">
+                    <h1>ChemE Tinkerer's Lab</h1>
+                </div>
+                <div class="about-text specialColor">
+                    <p>
+                      <a>The Chemical Engineering Tinkerers'</a> Lab is a one-of-a-kind makerspace for everyone in IIT Bombay to explore the diverse field of chemical engineering.
+                      <br>
+                    Ideated and built by our generous <a>alumni of the 1975 batch </a>, we're the latest addition to the Institute Technical Council, and work under the expert guidance of Prof. Venkat Gundabala.
+                    Being one of the few labs in the country that cater to solving chemical engineering problems, <a> We aim to bridge the gap between industry and academia, cutting-edge research and hobby project</a>
+                    </p>
+                    <p>
+                      What does that mean? Well, it means you can work on everything from optimising existing processes to innovating something entirely new -- we'll be there to help you along the way. Looking to 3D-print some hardware so you can demonstrate a model of your thesis project? Or maybe you'd like to simulate how microfluidics provides insights into arterial blood flow?
+                      We're not just for chemical engineers -- if you love applying scientific principles, if you're craving a peer group as crazy as you, or even if you're just looking for a fun conversation, <a>ChemE TL is the place for you.</a>
+                    </p>
+                    <p>
+                      Did we mention we are entirely student-run? That means we thrive on coffee and late nights --<b> we're open 24/7, step in whenever you like.
+We've got you covered.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+{% endblock %}

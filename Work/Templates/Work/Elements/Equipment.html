@@ -1,0 +1,47 @@
+{% extends "Work/Elements/base.html" %}
+{% block material %}
+{% load static %}
+<link rel="stylesheet" href={% static "Work/css/Equipment.css" %}>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+<div id="comp">
+<section class="container">
+    <div class="equipments">
+        <center><h1 style="font-size:50px"> Equipments</h1></center>
+    </div>
+    <br>
+    <div class="row active-with-click">
+{% for item in Material %}
+<div class="col-md-4 col-sm-6 col-xs-12">
+    <article class="material-card {{item.color}}">
+        <h3>
+    <span>{{item.title}}</span> 
+            <strong>
+            </strong>
+        </h3>
+        <div class="mc-content">
+            <div class="img-container">
+                <img class="img-responsive" src={% static item.image %}>
+            </div>
+            <div class="mc-description">
+              {{item.short}}
+            </div>
+        </div>
+        <a class="mc-btn-action">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="mc-footer">
+            <h4>
+            </h4>
+        </div>
+    </article>
+</div>
+        {% endfor %}
+      </div>
+</section>
+</div>
+<!-- partial -->
+
+
+
+<script src= {% static "Work/js/material.js" %} charset="utf-8"></script>
+{% endblock %}

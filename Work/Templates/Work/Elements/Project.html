@@ -1,0 +1,24 @@
+{% extends "Work/Elements/base.html" %}
+{% load  static %}
+{% block Project %}
+<script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href= {% static "Work/css/Project.css" %}>
+<div id = "projects">
+<center><h1> Ongoing Projects</h1></center>
+</div>
+<div class="containerProduct">
+{% for item in Products %}
+<div class="block"
+style= "background-image :url({% static item.image %})">
+  <div class="overlay"></div>
+  <div class="block--text">
+    <div class="text--head"><a href= "projects/{{item.id}}">{{item.title}}</a></div>
+    <div class="text--quote">{{item.short}}</div>
+  </div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
+</div>

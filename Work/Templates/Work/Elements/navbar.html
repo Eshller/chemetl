@@ -1,0 +1,24 @@
+{% extends "Work/Elements/base.html" %}
+{% block navbar %}
+<!-- Top Bar Start -->
+{% load static %}
+
+<link rel="stylesheet" href={% static "Work/css/navbar.css" %}>
+<!-- partial:index.partial.html -->
+<div class="nav">
+  <div class="logo">
+      <a href="#">CHEME TL</a>
+  </div>
+  <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us </a></li>
+      <li><a href="#">Equipments</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact Us</a></li>
+  </ul>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src={% static "Work/js/navbar.js" %} charset="utf-8"></script>
+    <!-- Nav Bar End -->
+{% endblock %}

@@ -1,0 +1,43 @@
+
+.nav{
+    background: black;
+    color: #FFF;
+    display: flex
+}
+.nav .logo{
+    font-size: 24px;
+    padding: 20px;
+    margin-left: 25px
+}
+.nav .logo a{
+    color: #FFF;
+    text-decoration: none
+}
+
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 50%;
+    margin-left: auto
+}
+ul li{
+    padding: 20px;
+    list-style: none
+}
+ul li a{
+    color: #FFF;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+ul li a:hover{
+    color: yellow;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold
+}
